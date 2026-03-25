@@ -486,11 +486,12 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-rule"></div>
-   <h1>The <em>Society</em><br>of Cooperative<br>Law</h1>
+  <p class="hero-eyebrow">Founded 2026 &nbsp;·&nbsp; Philippines</p>
+  <h1>The <em>Society</em><br>of Cooperative<br>Law</h1>
   <p class="hero-sub">A model society. Compact, disciplined, and designed to operate at the frontier of cooperative law practice.</p>
   <div class="hero-divider">
     <span></span>
-  
+    <p>Philippine Cooperative Sector &nbsp;·&nbsp; 2026</p>
     <span></span>
   </div>
   <div class="hero-cta-group">
@@ -610,7 +611,7 @@
       </div>
       <div class="event-detail">
         <span class="detail-label">Enquiries</span>
-        <div class="detail-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e68a878ba68a8791c8888392c8968e">[email&#160;protected]</a><br><em>+63 952 455 8206</em></div>
+        <div class="detail-value">lam@law.net.ph<br><em>+63 952 455 8206</em></div>
       </div>
     </div>
 
@@ -699,7 +700,7 @@
   <div class="footer-col">
     <h4>Contact</h4>
     <ul>
-      <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f8949995b894998fd6969d8cd68890">[email&#160;protected]</a></li>
+      <li>lam@law.net.ph</li>
       <li>+63 952 455 8206</li>
       <li>soc.law.net.ph</li>
     </ul>
@@ -710,7 +711,7 @@
   <a href="https://law.net.ph" target="_blank">law.net.ph</a>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Nav scroll
   const nav = document.getElementById('main-nav');
   window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
@@ -759,4 +760,14 @@
       });
       // no-cors means we can't read the response — assume success after POST
       document.getElementById('rsvp-form-wrapper').style.display = 'none';
-      document.getElementById('rsvp-success').style
+      document.getElementById('rsvp-success').style.display = 'block';
+      document.getElementById('rsvp-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (err) {
+      status.textContent = 'Something went wrong. Please email lam@law.net.ph directly.';
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '1';
+    }
+  });
+</script>
+</body>
+</html>
